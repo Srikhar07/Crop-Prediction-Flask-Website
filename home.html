@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crop Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<h1>CROP PRICE PREDICTION</h1>
+<P>Know which crop to plant based  on some input features.</P>
+<hr>
+
+<form action="/predict" method="post">
+    <input type="number" name="pH" placeholder="pH" step="any" required><br><br>
+    <input type="number" name="Soil EC" placeholder="Soil EC" step="any" required><br><br>
+    <input type="number" name="Phosphorus" placeholder="Phosphorus" step="any" required><br><br>
+    <input type="number" name="Potassium" placeholder="Potassium" step="any" required><br><br>
+    <input type="number" name="Urea" placeholder="Urea" step="any" required><br><br>
+    <input type="number" name="T.S.P" placeholder="T.S.P" step="any" required><br><br>
+    <input type="number" name="M.O.P" placeholder="M.O.P" step="any" required><br><br>
+    <input type="number" name="Moisture" placeholder="Moisture" step="any" required><br><br>
+    <input type="number" name="Temperature" placeholder="Temperature" step="any" required><br><br>
+    <button>Predict</button>
+</form>
+
+<p class="p1">Want to know more about crop?<a href="https://education.nationalgeographic.org/resource/crop/">Click here</a></p>
+
+<hr>
+<footer>Made with love in India ❤️</footer>
+</body>
+
+</html>
