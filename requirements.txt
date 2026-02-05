@@ -5,3 +5,7 @@ pillow
 tensorflow-cpu
 keras
 joblib
+sklearn
+seaborn
+numpy
+pandas
